@@ -15,7 +15,8 @@ let TaskService = class TaskService {
         this.tasks = [];
         this.getAllTasks = () => this.tasks;
     }
-    createTask(title, description) {
+    createTask(data) {
+        const { title, description } = data;
         const task = {
             id: uuidv4_1.uuid(),
             title,

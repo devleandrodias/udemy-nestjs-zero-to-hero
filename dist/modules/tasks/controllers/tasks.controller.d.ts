@@ -1,8 +1,9 @@
-import { TaskService } from '../services/tasks.service';
 import { ITask } from '../models/task.model';
+import { CreateTaskDto } from '../dtos/create-task.dto';
+import { TaskService } from '../services/tasks.service';
 export declare class TaskController {
     private readonly _service;
     constructor(_service: TaskService);
     getAllTasks(): ITask[];
-    createTask({ title, description }: ITask): ITask;
+    createTask(data: CreateTaskDto): ITask;
 }
