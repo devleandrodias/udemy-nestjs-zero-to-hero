@@ -1,9 +1,11 @@
 import { ITask } from '../models/task.model';
 import { CreateTaskDto } from '../dtos/create-task.dto';
+import { UpdateTaskDto } from '../dtos/update-task.dto';
 export declare class TaskService {
     private tasks;
     getAllTasks(): ITask[];
     getTaskById(id: string): ITask;
     createTask(data: CreateTaskDto): ITask;
+    updateTask(id: string, data: UpdateTaskDto): ITask;
     deleteTask(id: string): void;
 }

@@ -16,6 +16,7 @@ exports.TaskController = void 0;
 const common_1 = require("@nestjs/common");
 const create_task_dto_1 = require("../dtos/create-task.dto");
 const tasks_service_1 = require("../services/tasks.service");
+const update_task_dto_1 = require("../dtos/update-task.dto");
 let TaskController = class TaskController {
     constructor(_service) {
         this._service = _service;
@@ -28,6 +29,9 @@ let TaskController = class TaskController {
     }
     createTask(data) {
         return this._service.createTask(data);
+    }
+    updateTask(id, data) {
+        return this._service.updateTask(id, data);
     }
     deleteTask(id) {
         return this._service.deleteTask(id);
@@ -53,6 +57,13 @@ __decorate([
     __metadata("design:paramtypes", [create_task_dto_1.CreateTaskDto]),
     __metadata("design:returntype", Object)
 ], TaskController.prototype, "createTask", null);
+__decorate([
+    common_1.Put(':id'),
+    __param(0, common_1.Param('id')), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, update_task_dto_1.UpdateTaskDto]),
+    __metadata("design:returntype", Object)
+], TaskController.prototype, "updateTask", null);
 __decorate([
     common_1.Delete(':id'),
     __param(0, common_1.Param('id')),

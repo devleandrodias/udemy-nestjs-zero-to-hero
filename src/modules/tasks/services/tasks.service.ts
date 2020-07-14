@@ -4,6 +4,7 @@ import { Injectable } from '@nestjs/common';
 import { ITask } from '../models/task.model';
 import { ETaskStatus } from '../enuns/task-status.enum';
 import { CreateTaskDto } from '../dtos/create-task.dto';
+import { UpdateTaskDto } from '../dtos/update-task.dto';
 
 @Injectable()
 export class TaskService {
@@ -28,6 +29,17 @@ export class TaskService {
     };
 
     this.tasks.push(task);
+
+    return task;
+  }
+
+  updateTask(id: string, data: UpdateTaskDto): ITask {
+    const { title, description, status } = data;
+    const task = this.getTaskById(id);
+
+    task.title = title;
+    task.description = description;
+    task.status = status;
 
     return task;
   }
