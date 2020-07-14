@@ -31,6 +31,9 @@ let TaskService = class TaskService {
         this.tasks.push(task);
         return task;
     }
+    deleteTask(id) {
+        this.tasks = this.tasks.filter(x => x.id !== id);
+    }
 };
 TaskService = __decorate([
     common_1.Injectable()

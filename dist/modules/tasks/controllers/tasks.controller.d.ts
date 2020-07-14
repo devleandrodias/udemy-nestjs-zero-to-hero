@@ -7,4 +7,5 @@ export declare class TaskController {
     getAllTasks(): ITask[];
     getTaskById(id: string): ITask;
     createTask(data: CreateTaskDto): ITask;
+    deleteTask(id: string): void;
 }

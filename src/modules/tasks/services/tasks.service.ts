@@ -9,15 +9,15 @@ import { CreateTaskDto } from '../dtos/create-task.dto';
 export class TaskService {
   private tasks: ITask[] = [];
 
-  public getAllTasks(): ITask[] {
+  getAllTasks(): ITask[] {
     return this.tasks;
   }
 
-  public getTaskById(id: string): ITask {
+  getTaskById(id: string): ITask {
     return this.tasks.find(x => x.id === id);
   }
 
-  public createTask(data: CreateTaskDto): ITask {
+  createTask(data: CreateTaskDto): ITask {
     const { title, description } = data;
 
     const task: ITask = {
@@ -30,5 +30,9 @@ export class TaskService {
     this.tasks.push(task);
 
     return task;
+  }
+
+  deleteTask(id: string): void {
+    this.tasks = this.tasks.filter(x => x.id !== id);
   }
 }
