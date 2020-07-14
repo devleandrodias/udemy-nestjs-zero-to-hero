@@ -9,7 +9,13 @@ import { CreateTaskDto } from '../dtos/create-task.dto';
 export class TaskService {
   private tasks: ITask[] = [];
 
-  public getAllTasks = (): ITask[] => this.tasks;
+  public getAllTasks(): ITask[] {
+    return this.tasks;
+  }
+
+  public getTaskById(id: string): ITask {
+    return this.tasks.find(x => x.id === id);
+  }
 
   public createTask(data: CreateTaskDto): ITask {
     const { title, description } = data;

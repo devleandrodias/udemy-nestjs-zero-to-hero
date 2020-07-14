@@ -13,7 +13,12 @@ const task_status_enum_1 = require("../enuns/task-status.enum");
 let TaskService = class TaskService {
     constructor() {
         this.tasks = [];
-        this.getAllTasks = () => this.tasks;
+    }
+    getAllTasks() {
+        return this.tasks;
+    }
+    getTaskById(id) {
+        return this.tasks.find(x => x.id === id);
     }
     createTask(data) {
         const { title, description } = data;

@@ -23,6 +23,9 @@ let TaskController = class TaskController {
     getAllTasks() {
         return this._service.getAllTasks();
     }
+    getTaskById(id) {
+        return this._service.getTaskById(id);
+    }
     createTask(data) {
         return this._service.createTask(data);
     }
@@ -33,6 +36,13 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Array)
 ], TaskController.prototype, "getAllTasks", null);
+__decorate([
+    common_1.Get(':id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Object)
+], TaskController.prototype, "getTaskById", null);
 __decorate([
     common_1.Post(),
     __param(0, common_1.Body()),
