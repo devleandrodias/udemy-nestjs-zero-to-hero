@@ -1151,31 +1151,6 @@
         "signature": "ceadf8ae9b705cdfa854ab0efc44d22509e8e2a0d9ff35206bde3a954e469f07",
         "affectsGlobalScope": false
       },
-      "../src/task/task.model.ts": {
-        "version": "a1be44705f8a1c8c6018c0ee074d148c079c3111ce4745acbd5a51c4d1d7b15b",
-        "signature": "9bb14a15eaca1312f4a2c634b90e7d3dd1f94c0e0f05b1856ed86e3123619e90",
-        "affectsGlobalScope": false
-      },
-      "../src/task/task.service.ts": {
-        "version": "5787a253fe4abd0de7217a08e4b4a11ad3275daae446036c6fad0c6ff6fccce5",
-        "signature": "2713937c43b59b64b58e207ed71b3623e94ff6ba83b4e9fed9423cd2bc1d1958",
-        "affectsGlobalScope": false
-      },
-      "../src/task/task.controller.ts": {
-        "version": "73bbf2df3273348464feea40a463031a8f0b526ce0e3e6d5f979fff7f93958f9",
-        "signature": "6ec3e929c651a4d68967d2e98a97d7748e7b99617024b4bcc28e11a8653b1f1e",
-        "affectsGlobalScope": false
-      },
-      "../src/task/task.module.ts": {
-        "version": "d0e401a4d4ce95d0557dc1dfb0f924a715682c7b5031e84c1b8d924d71c8def1",
-        "signature": "e8f1bca3cc46ab477ded80ab60d1f1a79e912f0d6338b1af6b2635b5a0b4bff9",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "f794593b1cf88756456631ce35415c86e6eea8684bc1eb105aeb89fa6c9136e0",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
         "version": "71cc7da1ef9d96f44a214a43017535538b47988d4bc9dedbf7592d2f9fe10da9",
         "signature": "71cc7da1ef9d96f44a214a43017535538b47988d4bc9dedbf7592d2f9fe10da9",
@@ -1356,8 +1331,38 @@
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
         "affectsGlobalScope": false
       },
+      "../node_modules/uuidv4/build/lib/uuidv4.d.ts": {
+        "version": "7dd087757a98b4dacf32b19f2a48f81de7cdeeac551074289ddacd3f04843418",
+        "signature": "7dd087757a98b4dacf32b19f2a48f81de7cdeeac551074289ddacd3f04843418",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/tasks/models/task.model.ts": {
+        "version": "a1be44705f8a1c8c6018c0ee074d148c079c3111ce4745acbd5a51c4d1d7b15b",
+        "signature": "9bb14a15eaca1312f4a2c634b90e7d3dd1f94c0e0f05b1856ed86e3123619e90",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/tasks/services/tasks.service.ts": {
+        "version": "923c97d80eaf45d849610f07ee3f29511e965267fbf7b36ccd8fdcb833c5e3de",
+        "signature": "418b179ce1b5274134c2f4739137163d4a16dc64cd3364a39ded1375eec78459",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/tasks/controllers/tasks.controller.ts": {
+        "version": "2f98852c1ccbf133234d7b06e7e19cda5e83c50a248bd926c65d99f64d7d52ac",
+        "signature": "98a9967cccc68558df1371c68e2406f93a75bbb8e6cb5e3468b21faf43b9672a",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/tasks/tasks.module.ts": {
+        "version": "5706a1317b9dbec5ebdc865c206d95975f44e9615aa96d78003eed3734921893",
+        "signature": "e8f1bca3cc46ab477ded80ab60d1f1a79e912f0d6338b1af6b2635b5a0b4bff9",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/app.module.ts": {
+        "version": "263fcff1340e97ef08698e3e1a27350146da20f16bf6b2d8c016a727378dd2b9",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "affectsGlobalScope": false
+      },
       "../src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "version": "d68fb6b0dba6d07f3e976c3f24ea2ca46541856525fa79e1ab52631b30b244b5",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -1824,6 +1829,16 @@
       "../node_modules/@types/uglify-js/index.d.ts": {
         "version": "dbef1822091af2c0ee24d2be8222502dc1160473ea0b4709ba5f3856cec93537",
         "signature": "dbef1822091af2c0ee24d2be8222502dc1160473ea0b4709ba5f3856cec93537",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/uuid/interfaces.d.ts": {
+        "version": "5cc5d6f26a50072d51c4ea3a85ee65574b7fa2ae48261ae27b07014695638c50",
+        "signature": "5cc5d6f26a50072d51c4ea3a85ee65574b7fa2ae48261ae27b07014695638c50",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/uuid/index.d.ts": {
+        "version": "10705e247f107bf61e6f9f420efc4b5034e2ff2767c5255ae8b3a128f6e402e0",
+        "signature": "10705e247f107bf61e6f9f420efc4b5034e2ff2767c5255ae8b3a128f6e402e0",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts": {
@@ -4188,6 +4203,21 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/source-map/source-map.d.ts"
       ],
+      "../node_modules/@types/uuid/index.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/uuid/interfaces.d.ts"
+      ],
+      "../node_modules/@types/uuid/interfaces.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/webpack-sources/index.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/crypto.d.ts",
@@ -5117,14 +5147,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../src/app.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
+      "../node_modules/uuidv4/build/lib/uuidv4.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../src/task/task.module.ts"
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
@@ -5133,43 +5161,53 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/app.module.ts"
+        "../src/modules/app.module.ts"
       ],
-      "../src/task/task.controller.ts": [
+      "../src/modules/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/task/task.model.ts",
-        "../src/task/task.service.ts"
+        "../src/modules/tasks/tasks.module.ts"
       ],
-      "../src/task/task.model.ts": [
+      "../src/modules/tasks/controllers/tasks.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/modules/tasks/models/task.model.ts",
+        "../src/modules/tasks/services/tasks.service.ts"
+      ],
+      "../src/modules/tasks/models/task.model.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../src/task/task.module.ts": [
+      "../src/modules/tasks/services/tasks.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/task/task.controller.ts",
-        "../src/task/task.service.ts"
+        "../node_modules/uuidv4/build/lib/uuidv4.d.ts",
+        "../src/modules/tasks/models/task.model.ts"
       ],
-      "../src/task/task.service.ts": [
+      "../src/modules/tasks/tasks.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/task/task.model.ts"
+        "../src/modules/tasks/controllers/tasks.controller.ts",
+        "../src/modules/tasks/services/tasks.service.ts"
       ]
     },
     "exportedModulesMap": {
@@ -7494,6 +7532,21 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/source-map/source-map.d.ts"
       ],
+      "../node_modules/@types/uuid/index.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/uuid/interfaces.d.ts"
+      ],
+      "../node_modules/@types/uuid/interfaces.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/webpack-sources/index.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/crypto.d.ts",
@@ -8423,12 +8476,19 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-      "../src/task/task.controller.ts": [
-        "../src/task/task.model.ts",
-        "../src/task/task.service.ts"
+      "../node_modules/uuidv4/build/lib/uuidv4.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
-      "../src/task/task.service.ts": [
-        "../src/task/task.model.ts"
+      "../src/modules/tasks/controllers/tasks.controller.ts": [
+        "../src/modules/tasks/models/task.model.ts",
+        "../src/modules/tasks/services/tasks.service.ts"
+      ],
+      "../src/modules/tasks/services/tasks.service.ts": [
+        "../src/modules/tasks/models/task.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -8692,6 +8752,8 @@
       "../node_modules/@types/supertest/index.d.ts",
       "../node_modules/@types/tapable/index.d.ts",
       "../node_modules/@types/uglify-js/index.d.ts",
+      "../node_modules/@types/uuid/index.d.ts",
+      "../node_modules/@types/uuid/interfaces.d.ts",
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
@@ -8796,12 +8858,13 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/app.module.ts",
+      "../node_modules/uuidv4/build/lib/uuidv4.d.ts",
       "../src/main.ts",
-      "../src/task/task.controller.ts",
-      "../src/task/task.model.ts",
-      "../src/task/task.module.ts",
-      "../src/task/task.service.ts"
+      "../src/modules/app.module.ts",
+      "../src/modules/tasks/controllers/tasks.controller.ts",
+      "../src/modules/tasks/models/task.model.ts",
+      "../src/modules/tasks/services/tasks.service.ts",
+      "../src/modules/tasks/tasks.module.ts"
     ]
   },
   "version": "3.9.6"
