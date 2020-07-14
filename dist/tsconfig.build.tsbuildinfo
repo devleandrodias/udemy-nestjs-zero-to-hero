@@ -1336,13 +1336,18 @@
         "signature": "7dd087757a98b4dacf32b19f2a48f81de7cdeeac551074289ddacd3f04843418",
         "affectsGlobalScope": false
       },
+      "../src/modules/tasks/enuns/task-status.enum.ts": {
+        "version": "c0315e8326ba35ec517602c50335b657586ae99aabd028670ec7c51d496ae8c2",
+        "signature": "a03a72d8693d7cb2f73550b5b8e6d38189dcc1f1a24b49e5c9359d45c43a9183",
+        "affectsGlobalScope": false
+      },
       "../src/modules/tasks/models/task.model.ts": {
-        "version": "a1be44705f8a1c8c6018c0ee074d148c079c3111ce4745acbd5a51c4d1d7b15b",
-        "signature": "9bb14a15eaca1312f4a2c634b90e7d3dd1f94c0e0f05b1856ed86e3123619e90",
+        "version": "c9d27a056e6fac63db7e983f6af3d60247e8ea20c431ba09cec8ffe61c5a55e9",
+        "signature": "3f108fc6502f75062996cd55dd399e1d9427e8a2c0489dfa41acae1cbcc861c8",
         "affectsGlobalScope": false
       },
       "../src/modules/tasks/services/tasks.service.ts": {
-        "version": "923c97d80eaf45d849610f07ee3f29511e965267fbf7b36ccd8fdcb833c5e3de",
+        "version": "ed0b61795a100748b114ba1694507f0cb7dcd463851ae163b097d58ce9d293c0",
         "signature": "418b179ce1b5274134c2f4739137163d4a16dc64cd3364a39ded1375eec78459",
         "affectsGlobalScope": false
       },
@@ -5182,12 +5187,20 @@
         "../src/modules/tasks/models/task.model.ts",
         "../src/modules/tasks/services/tasks.service.ts"
       ],
-      "../src/modules/tasks/models/task.model.ts": [
+      "../src/modules/tasks/enuns/task-status.enum.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/modules/tasks/models/task.model.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/modules/tasks/enuns/task-status.enum.ts"
       ],
       "../src/modules/tasks/services/tasks.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -5197,6 +5210,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/uuidv4/build/lib/uuidv4.d.ts",
+        "../src/modules/tasks/enuns/task-status.enum.ts",
         "../src/modules/tasks/models/task.model.ts"
       ],
       "../src/modules/tasks/tasks.module.ts": [
@@ -8487,6 +8501,9 @@
         "../src/modules/tasks/models/task.model.ts",
         "../src/modules/tasks/services/tasks.service.ts"
       ],
+      "../src/modules/tasks/models/task.model.ts": [
+        "../src/modules/tasks/enuns/task-status.enum.ts"
+      ],
       "../src/modules/tasks/services/tasks.service.ts": [
         "../src/modules/tasks/models/task.model.ts"
       ]
@@ -8862,6 +8879,7 @@
       "../src/main.ts",
       "../src/modules/app.module.ts",
       "../src/modules/tasks/controllers/tasks.controller.ts",
+      "../src/modules/tasks/enuns/task-status.enum.ts",
       "../src/modules/tasks/models/task.model.ts",
       "../src/modules/tasks/services/tasks.service.ts",
       "../src/modules/tasks/tasks.module.ts"

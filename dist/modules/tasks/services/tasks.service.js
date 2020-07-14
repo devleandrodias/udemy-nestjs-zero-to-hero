@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskService = void 0;
 const uuidv4_1 = require("uuidv4");
 const common_1 = require("@nestjs/common");
-const task_model_1 = require("../models/task.model");
+const task_status_enum_1 = require("../enuns/task-status.enum");
 let TaskService = class TaskService {
     constructor() {
         this.tasks = [];
@@ -20,7 +20,7 @@ let TaskService = class TaskService {
             id: uuidv4_1.uuid(),
             title,
             description,
-            status: task_model_1.ETaskStatus.OPEN
+            status: task_status_enum_1.ETaskStatus.OPEN
         };
         this.tasks.push(task);
         return task;

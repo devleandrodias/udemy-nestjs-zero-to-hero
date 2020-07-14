@@ -1,7 +1,8 @@
 import { uuid } from 'uuidv4';
 import { Injectable } from '@nestjs/common';
 
-import { ITask, ETaskStatus } from '../models/task.model';
+import { ITask } from '../models/task.model';
+import { ETaskStatus } from '../enuns/task-status.enum';
 
 @Injectable()
 export class TaskService {
