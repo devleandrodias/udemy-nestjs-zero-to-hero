@@ -1,5 +1,5 @@
 import { uuid } from 'uuidv4';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 
 import { ITask } from '../models/task.model';
 import { ETaskStatus } from '../enuns/task-status.enum';
@@ -32,7 +32,11 @@ export class TaskService {
   }
 
   getTaskById(id: string): ITask {
-    return this.tasks.find(x => x.id === id);
+    const found = this.tasks.find(x => x.id === id);
+
+    if (!found) throw new NotFoundException(`Task with ID ${id} not found`);
+
+    return found;
   }
 
   createTask(data: CreateTaskDto): ITask {
