@@ -15,7 +15,7 @@ export class AuthController {
   @Post('/singin')
   async singIn(
     @Body(ValidationPipe) data: AuthCredentialsDto
-  ): Promise<string> {
+  ): Promise<{ accessToken: string }> {
     return await this._authService.singIn(data);
   }
 }
