@@ -11,4 +11,11 @@ export class AuthController {
   async singUp(@Body(ValidationPipe) data: AuthCredentialsDto): Promise<void> {
     return await this._authService.singUp(data);
   }
+
+  @Post('/singin')
+  async singIn(
+    @Body(ValidationPipe) data: AuthCredentialsDto
+  ): Promise<string> {
+    return await this._authService.singIn(data);
+  }
 }
