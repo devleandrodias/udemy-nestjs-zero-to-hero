@@ -10,7 +10,9 @@ import {
 import { AuthGuard } from '@nestjs/passport';
 
 import { AuthService } from '../services/auth.service';
+import { GetUser } from '../decorators/get-user.decorator';
 import { AuthCredentialsDto } from '../dtos/auth-credentials.dto';
+import { User } from '../entities/user.entity';
 
 @Controller('v1/auth')
 export class AuthController {
@@ -30,8 +32,8 @@ export class AuthController {
 
   @Get()
   @UseGuards(AuthGuard())
-  getTest(@Req() req: any): string {
-    console.log(req);
+  getTest(@GetUser() user: User): string {
+    console.log(user);
     return 'Passport token OK!';
   }
 }
