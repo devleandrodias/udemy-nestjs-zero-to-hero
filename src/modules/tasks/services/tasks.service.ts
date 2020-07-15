@@ -5,6 +5,7 @@ import { ITask } from '../models/task.model';
 import { ETaskStatus } from '../enuns/task-status.enum';
 import { CreateTaskDto } from '../dtos/create-task.dto';
 import { UpdateTaskDto } from '../dtos/update-task.dto';
+import { GetTaskFilterDto } from '../dtos/get-tasks-filter.dto';
 
 @Injectable()
 export class TaskService {
@@ -12,6 +13,22 @@ export class TaskService {
 
   getAllTasks(): ITask[] {
     return this.tasks;
+  }
+
+  getTasksWithFilter({ status, search }: GetTaskFilterDto): ITask[] {
+    let tasks = this.getAllTasks();
+
+    if (status) {
+      tasks = tasks.filter(task => task.status === status);
+    }
+
+    if (search) {
+      tasks = tasks.filter(
+        task => task.title.includes(search) || task.description.includes(search)
+      );
+    }
+
+    return tasks;
   }
 
   getTaskById(id: string): ITask {
@@ -33,12 +50,9 @@ export class TaskService {
     return task;
   }
 
-  updateTask(id: string, data: UpdateTaskDto): ITask {
-    const { title, description, status } = data;
+  updateStatusTask(id: string, { status }: UpdateTaskDto): ITask {
     const task = this.getTaskById(id);
 
-    task.title = title;
-    task.description = description;
     task.status = status;
 
     return task;
