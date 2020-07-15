@@ -54,7 +54,7 @@ export class TaskService {
     return task;
   }
 
-  updateStatusTask(id: string, { status }: UpdateTaskDto): ITask {
+  updateStatusTask(id: string, status: ETaskStatus): ITask {
     const task = this.getTaskById(id);
 
     task.status = status;
