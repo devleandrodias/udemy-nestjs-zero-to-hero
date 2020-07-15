@@ -1,13 +1,14 @@
 import {
-  Put,
   Get,
   Body,
   Post,
   Param,
   Query,
+  Patch,
   Delete,
+  UsePipes,
   Controller,
-  Patch
+  ValidationPipe
 } from '@nestjs/common';
 
 import { ITask } from '../models/task.model';
@@ -40,6 +41,7 @@ export class TaskController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe)
   createTask(@Body() data: CreateTaskDto): ITask {
     return this._service.createTask(data);
   }
