@@ -16,7 +16,6 @@ import { CreateTaskDto } from '../dtos/create-task.dto';
 import { TaskService } from '../services/tasks.service';
 import { UpdateTaskDto } from '../dtos/update-task.dto';
 import { GetTaskFilterDto } from '../dtos/get-tasks-filter.dto';
-import { ETaskStatus } from '../enuns/task-status.enum';
 import { TaskStatusValidationPipe } from '../pipes/task-status-validation.pipe';
 
 @Controller('v1/tasks')
