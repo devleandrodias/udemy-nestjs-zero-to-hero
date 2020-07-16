@@ -12,7 +12,8 @@ const mockFilters: GetTaskFilterDto = {
 };
 
 const mockTaskRepository = () => ({
-  getTask: jest.fn()
+  getTask: jest.fn(),
+  findOne: jest.fn()
 });
 
 describe('TasksService', () => {
@@ -40,5 +41,29 @@ describe('TasksService', () => {
       // expect(result).toEqual('someValue');
       expect(true);
     });
+  });
+
+  describe('getTaskById', () => {
+    it('calls taskRepository.findOne() and succesffuly retrive and return the task', () => {});
+
+    it('throws an error as task is not found', () => {});
+  });
+
+  describe('createTask', () => {
+    it('calls taskRepository.create() and returns the result', () => {
+      // expect(taskRepository.createTask).not.toHaveBeenCalled();
+      // const result = await taskRepository.createTask({
+      //   title: 'Test task',
+      //   description: 'Test description'
+      // });
+      // expect(taskRepository.createTask).toHaveBeenCalled();
+      // expect(result).toEqual('someTask');
+    });
+  });
+
+  describe('deleteTask', () => {
+    it('calls taskRepository.deleteTask() to delete a task', () => {});
+
+    it('throws an error as task could not be found', () => {});
   });
 });
