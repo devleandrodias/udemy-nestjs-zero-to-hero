@@ -1677,6 +1677,11 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/uuid@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.0.0.tgz#165aae4819ad2174a17476dbe66feebd549556c0"
+  integrity sha512-xSQfNcvOiE5f9dyd4Kzxbof1aTrLobL278pGLKOZI6esGfZ7ts9Ka16CzIN6Y8hFHE1C7jIBZokULhK1bOgjRw==
+
 "@types/webpack-sources@*":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-1.4.0.tgz#e58f1f05f87d39a5c64cf85705bdbdbb94d4d57e"
@@ -8979,6 +8984,14 @@ uuid@^3.1.0, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuidv4@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/uuidv4/-/uuidv4-6.2.0.tgz#4895bd5ae52e45fa18d9f79d55ba8d905a6bb468"
+  integrity sha512-zVCpLVDnxHkahCcu7Ul6HYrTm8+d6qrV/KChdQl52G2w1+GRiUX4jzSNsPX1cTb6aUm4thqccS7jl12AUOxZUQ==
+  dependencies:
+    "@types/uuid" "8.0.0"
+    uuid "8.2.0"
 
 v8-compile-cache@^2.0.3:
   version "2.1.1"

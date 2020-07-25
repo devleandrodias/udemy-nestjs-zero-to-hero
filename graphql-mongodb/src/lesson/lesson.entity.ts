@@ -15,5 +15,5 @@ export class Lesson {
   startDate: string;
 
   @Column()
-  endData: string;
+  endDate: string;
 }
