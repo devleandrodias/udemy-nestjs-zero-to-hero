@@ -1,6 +1,7 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { LessonType } from './lesson.type';
 import { LessonService } from './lesson.service';
+import { CreateLessonInput } from './lesson.input';
 
 @Resolver(() => LessonType)
 export class LessonResolver {
@@ -15,10 +16,8 @@ export class LessonResolver {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   @Mutation(() => LessonType)
   createLesson(
-    @Args('name') name: string,
-    @Args('startDate') startDate: string,
-    @Args('endDate') endDate: string,
+    @Args('createLessonInput') createLessonInput: CreateLessonInput,
   ) {
-    return this._service.createLesson(name, startDate, endDate);
+    return this._service.createLesson(createLessonInput);
   }
 }
