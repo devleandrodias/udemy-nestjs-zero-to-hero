@@ -8,9 +8,9 @@ export class Student {
   @PrimaryColumn()
   id: string;
 
-  @Column({ name: 'start_name' })
-  startName: string;
+  @Column()
+  firstName: string;
 
-  @Column({ name: 'last_name' })
+  @Column()
   lastName: string;
 }
