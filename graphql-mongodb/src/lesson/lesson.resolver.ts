@@ -14,6 +14,14 @@ export class LessonResolver {
   }
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  @Query(() => {
+    return [LessonType];
+  })
+  lessons() {
+    return this._service.getLessons();
+  }
+
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   @Mutation(() => LessonType)
   createLesson(
     @Args('createLessonInput') createLessonInput: CreateLessonInput,
