@@ -28,8 +28,18 @@ export class LessonService {
       name,
       startDate,
       endDate,
+      students: [],
     });
 
+    return this._repository.save(lesson);
+  }
+
+  async assingStudentsToLesson(
+    lessonId: string,
+    studentIds: string[],
+  ): Promise<Lesson> {
+    const lesson = await this._repository.findOne({ id: lessonId });
+    lesson.students = [...lesson.students, ...studentIds];
     return this._repository.save(lesson);
   }
 }
